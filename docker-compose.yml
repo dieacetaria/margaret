@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  development:
+    image: "golang:1.12.0"
+    working_dir: /go/src/github.com/dieacetaria/margaret
+    volumes:
+      - ".:/go/src/github.com/dieacetaria/margaret"
+    ports:
+      - "3000:3000"
